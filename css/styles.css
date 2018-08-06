@@ -1,0 +1,113 @@
+/*$zindex-dropdown:          1000 !default;*/
+/*$zindex-sticky:            1020 !default;*/
+/*$zindex-fixed:             1030 !default;*/
+/*$zindex-modal-backdrop:    1040 !default;*/
+/*$zindex-modal:             1050 !default;*/
+/*$zindex-popover:           1060 !default;*/
+/*$zindex-tooltip:           1070 !default;*/
+body {
+    margin-top: 110px
+}
+a {
+    outline: none;
+}
+.overflowclass {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+     }
+.overflowclass: :-webkit-scrollbar {
+    display: none;
+     }
+.overflowclassbox {
+    display: flex;
+     } 
+.over {
+    position: absolute;
+    top: 70%;
+    left: calc(50% - 64px);
+}
+
+.over a {
+    color: red;
+}
+.over a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.navbar-brand {
+    width: 250px;
+}
+.footer {
+    background-color: rgba(255, 255, 255, 0.70);
+    border-top: 2px #000000 solid;
+}
+.list-group-item {
+    background-color: transparent;
+    width: 50%;
+}
+.carousel-caption {
+    bottom: 35%;
+}
+.carousel-caption h3 {
+    opacity: 0;
+    animation-name: small-big;
+    animation-duration: 4s;
+}
+@keyframes small-big {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.caption-adopt {
+    bottom: 10%;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    body {
+        margin-top: 110px;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        background-image: url('../img/cat-resting-looking-street-163731.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        animation-name: example;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        
+    }
+/*    @keyframes example {*/
+/*    from {background-image: url('../img/stray-cats-2.jpg');}*/
+/*    to {background-image: url('../img/cat-resting-looking-street-163731.jpeg');}*/
+/*}*/
+    .bgc-w {
+        background-color: rgba(255, 255, 255, 0.70);
+    }
+    .list-group-item {
+        width: 50%;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    
+    }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    
+    }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+    }
