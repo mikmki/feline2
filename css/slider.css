@@ -1,5 +1,8 @@
 
-body { font-family:'Open Sans'; background-color:#fafafa;}.
+body { 
+  font-family:'Open Sans'; background-color:#fafafa;
+  
+}
 #mixedSlider {
   position: relative;
 }
@@ -18,10 +21,13 @@ body { font-family:'Open Sans'; background-color:#fafafa;}.
   white-space: normal;
   padding: 0 10px;
 }
-@media (max-width: 991px) {
-  #mixedSlider .MS-content .item {
-    width: 50%;
-  }
+@media (min-width: 991px) {
+  .imgTitle a {
+    color: #fff;
+}
+}
+.imgTitle a {
+  color: #fff;
 }
 @media (max-width: 767px) {
   #mixedSlider .MS-content .item {
@@ -59,14 +65,22 @@ body { font-family:'Open Sans'; background-color:#fafafa;}.
   margin: 0 20px 0 0;
   font-size: 16px;
   font-style: italic;
-  color: #ffffff;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .75);
   font-weight: bold;
   letter-spacing: 1px;
   transition: linear 0.1s;
+  padding: 5px;
+  border-radius: 10px;
+}
+#mixedSlider .MS-content .item a:hover {
+  color: #000;
+  background-color: #fff;
 }
 #mixedSlider .MS-content .item a:hover {
   text-shadow: 0 0 1px grey;
 }
+
 #mixedSlider .MS-controls button {
   position: absolute;
   border: none;
@@ -77,9 +91,14 @@ body { font-family:'Open Sans'; background-color:#fafafa;}.
   color: rgba(0, 0, 0, 0.4);
   transition: 0.15s linear;
 }
+.MS-right .fa, .MS-left .fa  {
+  font-size: 50px;
+  color: red;
+}
 #mixedSlider .MS-controls button:hover {
   color: rgba(0, 0, 0, 0.8);
 }
+
 @media (max-width: 992px) {
   #mixedSlider .MS-controls button {
     font-size: 30px;
@@ -95,7 +114,7 @@ body { font-family:'Open Sans'; background-color:#fafafa;}.
 }
 @media (max-width: 767px) {
   #mixedSlider .MS-controls .MS-left {
-    left: -10px;
+    left: -20px;
   }
 }
 #mixedSlider .MS-controls .MS-right {
@@ -103,7 +122,7 @@ body { font-family:'Open Sans'; background-color:#fafafa;}.
 }
 @media (max-width: 767px) {
   #mixedSlider .MS-controls .MS-right {
-    right: -10px;
+    right: -20px;
   }
 }
 #basicSlider { position: relative; }
@@ -136,7 +155,10 @@ body { font-family:'Open Sans'; background-color:#fafafa;}.
 }
 @media (max-width: 500px) {
 
-#basicSlider .MS-content .item { width: 50%; }
+#basicSlider .MS-content .item { 
+  width: 50%; 
+  
+}
 }
 
 #basicSlider .MS-content .item a {
