@@ -205,6 +205,11 @@ img {
 #adoptnow label {
     color: #fff;
 }
+@media (max-width: 575px) {
+    .carousel-caption p, .carousel-caption a {
+        font-size: 26px;
+    }
+}
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
