@@ -199,6 +199,9 @@ img {
     line-height: 16;
     font-weight: 900;
 }
+.close span {
+    color: #dc3545;
+}
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
